@@ -1,0 +1,25 @@
+{
+  "contests" : [
+    {
+      "id" : 1,
+      "categoryName": "Business/Company",
+      "contestName" : "Cognitive Building Bricks"
+    },
+    {
+      "id" : 2,
+      "categoryName": "Magazine/Newsletter",
+      "contestName" : "Educating People about stuff"
+    },
+    {
+      "id" : 3,
+      "categoryName": "Product",
+      "contestName" : "Smells Like Cheese"
+    },
+    
+    {
+      "id" : 4,
+      "categoryName": "Person",
+      "contestName" : "She's so ugly"
+    }
+  ]
+}
