@@ -7,20 +7,25 @@ import path from 'path';
 const server = express();
 server.set('view engine', 'ejs');
 
+import  serverRender from './serverRender';
+
 server.use(sassMiddleware({
   src: path.join(__dirname, 'sass'),
   dest: path.join(__dirname, 'public')
 }));
 
 server.get('/', (req, res) => {
-    res.render('index', {
-        content: 'Hello express and <em>EJS</em>'
-    });
+ 
+      res.render('index', {
+        content: serverRender()
+      });
+   
+    
 });
 
 server.use('/api', apiRouter);
 server.use(express.static('public'));
 
-server.listen(config.port, () => {
+server.listen(config.port, config.host, () => {
     console.info('Express listening on port', config.port);
 });

@@ -5,6 +5,6 @@ import data from './testData';
 console.log(data);
 
 ReactDom.render(
-    <App contests={data.contests} className="App" />,
+    <App initialContests={[]} className="App" />,
     document.getElementById('root')
 );

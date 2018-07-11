@@ -7,7 +7,7 @@ import axios from 'axios';
 class App extends Component {
   state = { 
     pageHeader: 'Naming Contests 2',
-    contests: []
+    contests: this.props.initialContests
   }
   componentDidMount(){
     axios.get('/api/contests')
